@@ -1,0 +1,10 @@
+cloudpickle==2.2.1
+Farama-Notifications==0.0.4
+gym==0.26.2
+gym-notices==0.0.8
+gymnasium==0.29.0
+numpy==1.25.2
+panda-gym==3.0.7
+pybullet==3.2.5
+scipy==1.11.1
+typing_extensions==4.7.1
