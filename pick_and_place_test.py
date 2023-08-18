@@ -1,7 +1,8 @@
 import gymnasium as gym
 import panda_gym
+import time
 
-env = gym.make("PandaPickAndPlace-v3", render_mode="rgb_array", renderer="OpenGL")
+env = gym.make("PandaPickAndPlace-v3", render_mode="human")
 observation, info = env.reset()
 
 images = [env.render()]
@@ -13,5 +14,7 @@ for _ in range(200):
     if terminated or truncated:
         observation, info = env.reset()
         images.append(env.render())
+
+    time.sleep(0.1)
 
 env.close()
